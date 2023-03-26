@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+
+interface IUser {
+  age: number
+  name: string
+}
 
 @Component({
-  selector: 'app-root',
+  selector: 'inst-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'instagram';
+  appTitle = 'instagram'
+
+  user: IUser = {
+    age: 10,
+    name: 'userName',
+  }
 }
