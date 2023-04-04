@@ -1,5 +1,9 @@
-<div>
-  <h1>{{ appTitle }}</h1>
-  <h2>{{ user.name }}</h2>
-  <h2>{{ user.age }}</h2>
+<div *ngFor="let fruit of fruits; even as even; odd as odd">
+  <p
+    *ngIf="fruit.price > 7"
+    class="default"
+    [ngClass]="{ success: even, error: odd, bold: fruit.price > 15 }"
+  >
+    name: {{ fruit.name }}, price: {{ fruit.price }}
+  </p>
 </div>
