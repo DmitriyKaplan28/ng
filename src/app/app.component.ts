@@ -21,6 +21,5 @@ export class AppComponent {
     { id: '6', name: 'raspberries', price: 18 },
     { id: '7', name: 'avocados', price: 14 },
     { id: '8', name: 'mangoes', price: 3 },
-    { id: '9', name: 'kiwifruit', price: 7 },
   ]
 }
